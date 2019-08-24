@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { gql } from 'apollo-boost';
 import { graphql } from 'react-apollo'
 import { Dropdown } from 'semantic-ui-react';
-
+import { getAuthorsQuery } from '../queries/queries';
 
 
 const renderAuthorOptions = (authors) => authors ? authors.map(a => {
@@ -13,14 +12,7 @@ const renderAuthorOptions = (authors) => authors ? authors.map(a => {
   }
 }) : null;
 
-const getAuthorsQuery = gql`
-{
-  authors{
-    name
-    id
-  }
-}
-`;
+
 
 
 export const AuthorDropdown = graphql(getAuthorsQuery)

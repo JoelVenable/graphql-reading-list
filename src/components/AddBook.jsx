@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { gql } from 'apollo-boost';
 import { graphql } from 'react-apollo'
 import { Form, Dropdown, Button } from 'semantic-ui-react';
 import { AuthorDropdown } from './AuthorDropdown';
