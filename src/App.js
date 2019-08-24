@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BookList } from './components/BookList';
 
@@ -10,6 +9,7 @@ import { Header } from 'semantic-ui-react';
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql'
 })
+
 
 export const App = () => {
   return (

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { gql } from 'apollo-boost';
-import { compose, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
 
 
 
@@ -12,6 +12,7 @@ const getBooksQuery = gql`
   }
 }
 `;
+
 
 
 const DisplayBooks = ({ data }) => {
