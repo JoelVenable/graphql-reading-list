@@ -16,7 +16,7 @@ const getBooksQuery = gql`
 
 const DisplayBooks = ({ data }) => {
   if (data.loading) return <li>Data is loading...</li>;
-  else return data.books.map(b => <li>{b.name}</li>);
+  else return data.books ? data.books.map(b => <li>{b.name}</li>) : null;
 
 
 }
